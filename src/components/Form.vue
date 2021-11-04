@@ -31,8 +31,8 @@
 export default {
   data() {
     return {
-      name: 'John Silver'
-    }
-  }
-}
+      name: "John Silver",
+    };
+  },
+};
 </script>
