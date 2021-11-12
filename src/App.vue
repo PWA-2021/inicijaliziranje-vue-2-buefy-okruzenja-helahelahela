@@ -83,6 +83,15 @@
           <li>Izleti</li>
         </ul>
       </div>
+
+      <div class="friends">
+        <h2>Nadolazeći događaji</h2>
+        <ul id="teme">
+          <li>12.11.2021. Koncert</li>
+          <li>17.11.2021. Rođendan</li>
+          <li>06.12.2021. Sv. Nikola</li>
+        </ul>
+      </div>
     </div>
 
     <router-view />
@@ -99,22 +108,24 @@
   h1,
   h2 {
     font-weight: bold;
-    color: #f29d9d;
+    color: #217beb;
   }
 }
 
 #info {
-  width: 25%;
-  border: 1px solid black;
+  width: 15%;
   float: left;
   padding: 20px;
+  margin: 20px;
+  margin-top: 40px;
+  margin-left: 100px;
 }
 
 .slika {
   height: 100px;
   width: 100px;
   border-radius: 100px;
-  background-color: pink;
+  background-color: #217beb;
   margin: 10px auto;
 }
 
@@ -126,7 +137,7 @@
     color: #2c3e50;
 
     &.router-link-exact-active {
-      color: #f2a69b;
+      color: #217beb;
     }
   }
 }
@@ -138,29 +149,28 @@ li a {
 }
 
 #display {
-  width: 50%;
-  border: 1px solid black;
+  width: 45%;
   text-align: left;
   float: left;
+  margin-top: 20px;
 }
 
 .article {
-  margin: 10px;
-  margin-bottom: 25px;
-  background-color: #f5f0f3;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 20px;
+  border-bottom: 1px solid #d5dbe3;
 }
 
 .date {
   font-size: smaller;
-  color: #f2a69b;
+  color: #217beb;
 }
 
 #socials {
   float: left;
-  border: 1px solid black;
   width: 25%;
+  margin-top: 40px;
+  margin-left: 50px;
 }
 
 @counter-style cvijet {
@@ -183,10 +193,11 @@ li a {
 }
 
 .friends {
-  padding: 10px;
+  padding: 20px;
   background-color: #f5f0f3;
   border-radius: 30px;
   margin: 20px;
+  width: 55%;
 }
 #teme {
   margin-top: 20px;
