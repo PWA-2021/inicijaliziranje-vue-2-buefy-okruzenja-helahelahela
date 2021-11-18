@@ -1,5 +1,9 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <app-content>
+      <div id="display">
+      <h1>This is an about page.</h1>
+      </div>
+    </app-content>
   </div>
 </template>
