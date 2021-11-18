@@ -1,0 +1,126 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #3b3839;
+}
+
+#home {
+    background-color: #413C69;
+}
+
+app-content {
+    margin: 20px;
+    width: 70%;
+}
+
+h1,
+h2 {
+  font-weight: bold;
+  color: #217beb;
+  font-size: 18px;
+}
+
+#info {
+  width: 25%;
+  float: left;
+  padding: 20px;
+  margin: 20px;
+  margin-top: 60px;
+  background-color: #f5f0f3;
+  border-radius: 20px;
+}
+
+.slika {
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+  background-color: #217beb;
+  margin: 10px auto;
+}
+
+#nav {
+  padding: 30px;
+}
+
+a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.router-link-exact-active {
+  color: #217beb;
+}
+
+li a {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+#display {
+  width: 45%;
+  text-align: left;
+  float: left;
+  margin-top: 20px;
+}
+
+.article {
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.article h2 {
+  margin: 5px;
+}
+
+.article p {
+  margin: 5px;
+}
+
+.date {
+  font-size: smaller;
+  color: #217beb;
+}
+
+#socials {
+  float: left;
+  width: 25%;
+  margin-top: 40px;
+}
+
+@counter-style cvijet {
+  system: cyclic;
+  symbols: "\2601";
+  suffix: " ";
+}
+
+#prijatelji {
+  list-style-type: cvijet;
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 20px;
+  text-align: left;
+  text-indent: 5px;
+}
+
+#prijatelji li {
+  margin: 5px;
+}
+
+.friends {
+  padding: 20px;
+  background-color: #f5f0f3;
+  border-radius: 30px;
+  margin: 20px;
+  width: 80%;
+}
+#teme {
+  margin-top: 20px;
+}
+#teme li {
+  font-weight: bold;
+  font-size: 15px;
+  margin: 5px;
+}
