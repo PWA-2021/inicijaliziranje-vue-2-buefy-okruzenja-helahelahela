@@ -1,11 +1,27 @@
 <template>
-  <div class="home">
-    <app-header></app-header>
+<div class="bg">
+    <div class="home">
+    <div id="info">
+      <div id="user">
+        <img class="moon" src="../assets/drink.png">
+        <h1>Username</h1>
+      </div>
 
-    <app-content>
+      <div id="nav">
+        <ul>
+          <li><router-link to="/">Timeline</router-link></li>
+          <li><router-link to="/newentry">New Entry</router-link></li>
+          <li><router-link to="/Calendar">Calendar</router-link></li>
+          <li><router-link to="/">Categories</router-link></li>
+          <li><router-link to="/Login">Log In</router-link></li>
+        </ul>
+      </div>
+    </div>
+
     <div id="display">
       <div class="article">
         <h2>Sretan dan</h2>
+        <h3>Category: <span class="blue">Good-mood</span></h3>
         <p>
           May indulgence difficulty ham can put especially. Bringing remember
           for supplied her why was confined. Middleton principle did she
@@ -31,6 +47,7 @@
 
       <div class="article">
         <h2>Dosadan dan</h2>
+        <h3>Category: <span class="blue">Dosada</span></h3>
         <p>
           Prevailed sincerity behaviour to so do principle mr. As departure at
           no propriety zealously my. On dear rent if girl view. First on smart
@@ -69,25 +86,25 @@
       <div class="friends">
         <h2>Teme</h2>
         <ul id="teme">
-          <li>Glazba</li>
-          <li>Ljubimci</li>
-          <li>Računalne igre</li>
-          <li>Sport</li>
-          <li>Izleti</li>
+          <li><a>Glazba</a></li>
+          <li><a>Ljubimci</a></li>
+          <li><a>Računalne igre</a></li>
+          <li><a>Sport</a></li>
+          <li><a>Izleti</a></li>
         </ul>
       </div>
 
       <div class="friends">
         <h2>Nadolazeći događaji</h2>
         <ul id="teme">
-          <li>12.11.2021. Koncert</li>
-          <li>17.11.2021. Rođendan</li>
-          <li>06.12.2021. Sv. Nikola</li>
+          <li><a>12.11.2021. Koncert</a></li>
+          <li><a>17.11.2021. Rođendan</a></li>
+          <li><a>06.12.2021. Sv. Nikola</a></li>
         </ul>
       </div>
     </div>
-    </app-content>
   </div>
+</div>
 </template>
 
 <script>
