@@ -4,17 +4,25 @@
             "userId": 1,
             "id": 1,
             "title": "A fun day with friends",
-            "category": "Good-mood",
+            "category": "Happy",
             "entry": "May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there smile to my front. He fruit oh enjoy it of whose table. Cultivated occasional old her unpleasing unpleasant. At as do be against pasture covered viewing started. Enjoyed me settled mr respect no spirits civilly.",
-            "date": "2021-10-9"
+            "date": "2021-12-15"
         },
         {
             "userId": 1,
             "id": 2,
             "title": "Weekend, too much homework",
-            "category": "Loose-snooze",
+            "category": "Bored",
             "entry": "Prevailed sincerity behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household of principle perfectly he.",
             "date": "2021-12-4"
+        },
+        {
+            "userId": 1,
+            "id": 3,
+            "title": "Not feeling well...",
+            "category": "Sad",
+            "entry": "Perhaps far exposed age effects. Now distrusts you her delivered applauded affection out sincerity. As tolerably recommend shameless unfeeling he objection consisted. She although cheerful perceive screened throwing met not eat distance. Viewing hastily or written dearest elderly up weather it as. So direction so sweetness or extremity at daughters. Provided put unpacked now but bringing.",
+            "date": "2021-12-2"
         }
     ]
 }
