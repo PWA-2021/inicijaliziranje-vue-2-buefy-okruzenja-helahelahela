@@ -2,17 +2,17 @@
     "friends": [
         {
             "username": "morsmordre",
-            "icon": "assets/img/morsmordreIcon.png",
+            "icon": "assets/img/icons/morsmordreIcon.png",
             "status": 0
         },
         {
             "username": "SmellyCat",
-            "icon": "assets/img/SmellyCatIcon.png",
+            "icon": "assets/img/icons/SmellyCatIcon.png",
             "status": 1
         },
         {
             "username": "qNeb",
-            "icon": "assets/img/qNebIcon.png",
+            "icon": "assets/img/icons/qNebIcon.png",
             "status": 0
         }
     ]
