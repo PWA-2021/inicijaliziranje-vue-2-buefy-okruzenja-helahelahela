@@ -25,7 +25,6 @@
             <span>Category: <span class="blue">{{ post.category }}</span></span><br>
             <p>{{ post.entry }}</p><br>
             <p class="date">{{ post.date }}</p>
-            <!-- <div class="tooltip">{{ letter.alt }}</div> -->
           </li>
         </ul>
         <hr />
@@ -36,7 +35,7 @@
         <h2>Prijatelji</h2>
         <ul id="prijatelji">
           <li v-for="friend in friends" :key="friend.username">
-            <!-- <span>{{ friend.icon }}</span> -->
+            <img class="frIcons" :src="friendIcon(friend.icon)" />
             <h5 class="blue">{{ friend.username }}</h5>
           </li>
         </ul>
@@ -81,11 +80,11 @@
     // console.log(this.posts);
     console.log(this.friends);
     },
-    // methods: {
-    // friendIcon: function(path) {
-    //   return require("@/" + path);
-    // },
-    // }
+    methods: {
+    friendIcon: function(path) {
+      return require("@/" + path);
+    },
+    }
   }
 
 </script>
