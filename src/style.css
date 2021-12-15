@@ -127,8 +127,25 @@ li a {
   text-indent: 5px;
 }
 
+.frIcons {
+  width: 25px;
+  height: 25px;
+  border-radius: 25px;
+}
+
+#prijatelji h5::before{
+  content: "" !important;
+  width: 25px !important;
+  height: 25px !important;
+}
+
+#prijatelji img h5::before {
+  display: block;
+}
+
 #prijatelji li {
-  margin: 5px 0;
+  display: flex;
+  margin: 10px auto;
 }
 
 .friends {
