@@ -93,6 +93,7 @@ li a {
 
 .article h2 {
   margin: 10px 0;
+  color: #A6BDF0;
 }
 
 .article p {
@@ -101,7 +102,7 @@ li a {
 
 .date {
   font-size: smaller;
-  color: #a6bdf5;
+  color: #A6BDF0;
 }
 
 #socials {
@@ -111,14 +112,14 @@ li a {
   margin-bottom: 100px;
 }
 
-@counter-style cvijet {
+/* @counter-style cvijet {
   system: cyclic;
   symbols: "\2601";
   suffix: " ";
-}
+} */
 
 #prijatelji {
-  list-style-type: cvijet;
+  list-style-type: none;
   width: 65%;
   margin: 0 auto;
   margin-top: 20px;
@@ -318,7 +319,7 @@ li a {
 
 #slika {
   width: 50%;
-  background-image: url("assets/vibes2.png");
+  background-image: url("assets/img/vibes2.png");
   height: 80vh;
   background-repeat: no-repeat;
   background-size: 50%;
