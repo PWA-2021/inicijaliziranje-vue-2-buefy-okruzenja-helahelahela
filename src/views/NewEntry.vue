@@ -3,7 +3,7 @@
     <div class="home">
         <div id="info">
             <div id="user">
-                <img class="moon" src="../assets/drink.png">
+                <img class="moon" src="@/assets/img/drink.png">
                 <h1>Username</h1>
             </div>
 
