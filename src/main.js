@@ -18,7 +18,6 @@ new Vue({
 new Vue({
   el: '#app',
   vuetify: new vuetify(),
-  
 })
 
 new Vue({
