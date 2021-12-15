@@ -1,0 +1,11 @@
+{
+    "users": [
+        {
+            "username": "Aquiie",
+            "userID": 1,
+            "nameSurname": "Hela Maković",
+            "email": "hmakovic@tvz.hr",
+            "password": "hela123"
+        }
+    ]
+}
