@@ -2,7 +2,7 @@
     <div id="pozadina">
         <div id="sadrzaj">
             <div id="login">
-                <h1>Log In</h1>
+                <h1>Bullet Journal</h1>
                 <form class="prijava">
                 <input type="email" class="log" placeholder="Enter E-mail" name="uname" required>
 
