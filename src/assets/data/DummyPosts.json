@@ -1,0 +1,20 @@
+{
+    "posts": [
+        {
+            "userId": 1,
+            "id": 1,
+            "title": "A fun day with friends",
+            "category": "Good-mood",
+            "entry": "May indulgence difficulty ham can put especially. Bringing remember for supplied her why was confined. Middleton principle did she procuring extensive believing add. Weather adapted prepare oh is calling. These wrong of he which there smile to my front. He fruit oh enjoy it of whose table. Cultivated occasional old her unpleasing unpleasant. At as do be against pasture covered viewing started. Enjoyed me settled mr respect no spirits civilly.",
+            "date": "2021-10-9"
+        },
+        {
+            "userId": 1,
+            "id": 2,
+            "title": "Weekend, too much homework",
+            "category": "Loose-snooze",
+            "entry": "Prevailed sincerity behaviour to so do principle mr. As departure at no propriety zealously my. On dear rent if girl view. First on smart there he sense. Earnestly enjoyment her you resources. Brother chamber ten old against. Mr be cottage so related minuter is. Delicate say and blessing ladyship exertion few margaret. Delight herself welcome against smiling its for. Suspected discovery by he affection household of principle perfectly he.",
+            "date": "2021-12-4"
+        }
+    ]
+}
