@@ -26,10 +26,10 @@ const routes = [
       import("../views/Calendar.vue"),
   },
   {
-    path: "/login",
-    name: "LogIn",
+    path: "/timeline",
+    name: "Timeline",
     component: () =>
-      import("../views/Login.vue"),
+      import("../views/Timeline.vue"),
   },
   {
     path: "/newentry",
@@ -37,6 +37,12 @@ const routes = [
     component: () =>
       import("../views/NewEntry.vue"),
   },
+  {
+    path: "/register",
+    name: "Register",
+    component: () =>
+      import("../views/Register.vue"),
+  }
 ];
 
 const router = new VueRouter({
