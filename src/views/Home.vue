@@ -1,90 +1,33 @@
 <template>
-<div class="bg">
-    <div class="home">
-    <div id="info">
-      <div id="user">
-        <img class="moon" src="@/assets/img/drink.png">
-        <h1>Username</h1>
-      </div>
+    <div id="pozadina">
+        <div id="sadrzaj">
+            <div id="login">
+                <h1>Bullet Journal</h1>
+                <form class="prijava">
+                    <input type="email" class="log" placeholder="Enter E-mail" name="uname" id="email" required>
 
-      <div id="nav">
-        <ul>
-          <li><router-link to="/">Timeline</router-link></li>
-          <li><router-link to="/newentry">New Entry</router-link></li>
-          <li><router-link to="/Calendar">Calendar</router-link></li>
-          <li><router-link to="/">Categories</router-link></li>
-          <li><router-link to="/Login">Log In</router-link></li>
-        </ul>
-      </div>
+                    <input type="password" class="log" placeholder="Enter Password" name="psw" id="password" required>
+
+                    <label for="checkbox" id="check"><input id="checkbox" type="checkbox" checked="checked" name="remember">Remember me</label>
+
+                    <a>Forgot your password?</a>
+
+                    <button type="submit" id="loginB"><h2 id="boja">Log In</h2></button>
+                    <router-link to="/Register"><button id="regC"><h2 id="boja2">Register</h2></button></router-link>
+                    <label>
+                    </label>
+                </form>
+            </div>
+            <div id="slika">
+                <router-link to="/Register"><button id="regB"><h2 id="boja2">Register</h2></button></router-link>
+            </div>
+        </div>
     </div>
-
-    <div id="display">
-        <ul class="posts">
-          <li v-for="post in posts" :key="post.title" class="article">
-            <h2>{{ post.title }}</h2><br>
-            <span>Category: <span class="blue">{{ post.category }}</span></span><br>
-            <p>{{ post.entry }}</p><br>
-            <p class="date">{{ post.date }}</p>
-          </li>
-        </ul>
-        <hr />
-    </div>
-
-    <div id="socials">
-      <div class="friends">
-        <h2>Prijatelji</h2>
-        <ul id="prijatelji">
-          <li v-for="friend in friends" :key="friend.username">
-            <img class="frIcons" :src="friendIcon(friend.icon)" />
-            <h5 class="blue">{{ friend.username }}</h5>
-          </li>
-        </ul>
-      </div>
-
-      <div class="friends">
-        <h2>Teme</h2>
-        <ul id="teme">
-          <li><a>Glazba</a></li>
-          <li><a>Ljubimci</a></li>
-          <li><a>Računalne igre</a></li>
-          <li><a>Sport</a></li>
-          <li><a>Izleti</a></li>
-        </ul>
-      </div>
-
-      <div class="friends">
-        <h2>Nadolazeći događaji</h2>
-        <ul id="teme">
-          <li><a>12.11.2021. Koncert</a></li>
-          <li><a>17.11.2021. Rođendan</a></li>
-          <li><a>06.12.2021. Sv. Nikola</a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</div>
 </template>
 
-<script>
-  import json from "@/assets/data/DummyPosts.json";
-  import json2 from "@/assets/data/Friends.json";
-  export default {
-    name: "Home",
-    data: function() {
-      return {
-        posts: json.posts,
-        friends: json2.friends,
-      };
-    },
-    mounted: function() {
-    // console.log(this.posts);
-    console.log(this.friends);
-    },
-    methods: {
-    friendIcon: function(path) {
-      return require("@/" + path);
-    },
-    }
-  }
+<style lang="scss">
+</style>
 
+<script>
+    
 </script>
