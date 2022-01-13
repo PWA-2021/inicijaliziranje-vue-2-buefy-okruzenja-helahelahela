@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <top-header></top-header>
     <router-view />
   </div>
 </template>
@@ -9,4 +10,8 @@
 </style>
 
 <script>
+import Top from "./components/Top.vue";
+export default {
+  components: {'top-header': Top}
+}
 </script>
