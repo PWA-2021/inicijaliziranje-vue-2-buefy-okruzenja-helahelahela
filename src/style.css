@@ -368,6 +368,23 @@ li a {
   display: none;
 }
 
+/* REGISTRACIJA */
+
+#register {
+  width: 100%;
+  margin: 75px 0;
+  background-color: #633277;
+  padding: 4%;
+  height: 80vh;
+  border-radius: 15px;
+}
+
+#register h1 {
+  font-size: 35px;
+  margin-top: 50px;
+  color: #F5E7F3;
+}
+
 @media screen and (max-width: 1320px) {
   #slika {
     background-size: 75%;
