@@ -28,7 +28,7 @@ Vue.use(vuetify);
 
 let app;
 firebase.auth().onAuthStateChanged(user=> {
-  conseole.log(user);
+  console.log(user);
   if(!app) {
     app = new Vue({
       router,
