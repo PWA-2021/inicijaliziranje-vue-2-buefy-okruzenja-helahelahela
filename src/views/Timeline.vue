@@ -9,9 +9,11 @@
 
       <div id="nav">
         <ul>
-          <li><router-link to="/">Timeline</router-link></li>
+          <li><router-link to="/timeline">Timeline</router-link></li>
           <li><router-link to="/newentry">New Entry</router-link></li>
-          <li><router-link to="/Calendar">Calendar</router-link></li>
+          <li><router-link to="/calendar">Calendar</router-link></li>
+          <li><router-link to="/categories">Categories</router-link></li>
+          <li><a @click.prevent="signOut">Sign out</a></li>
         </ul>
       </div>
     </div>
@@ -58,12 +60,27 @@
           <li><a>06.12.2021. Sv. Nikola</a></li>
         </ul>
       </div>
+
+      <!-- <input
+        type="text"
+        v-model="search"
+        class="search"
+        placeholder="Search by title.."
+      />
+
+      <ul>
+        <li v-for="post in filteredList" :key="post.category">
+          <b>{{ post.title }}</b><br>{{ post.category }}
+        </li>
+      </ul> -->
     </div>
   </div>
 </div>
 </template>
 
 <script>
+  import firebase from 'firebase/compat/app';
+  import 'firebase/compat/auth';
   import json from "@/assets/data/DummyPosts.json";
   import json2 from "@/assets/data/Friends.json";
   export default {
@@ -78,10 +95,28 @@
     // console.log(this.posts);
     console.log(this.friends);
     },
+    computed: {
+      //funkcija za pretragu pjesama
+      filteredList() {
+        return this.songs.filter((song) => {
+          return song.title.toLowerCase().includes(this.search.toLowerCase());
+        });
+      },
+    },
     methods: {
     friendIcon: function(path) {
       return require("@/" + path);
     },
+    signOut() {
+      firebase
+        .auth()
+        .signOut()
+        .then(() => {
+          this.$router.replace({
+            name: "Home"
+          });
+        });
+    }
     }
   }
 
