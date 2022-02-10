@@ -9,19 +9,19 @@
 
             <div id="nav">
                 <ul>
-                <li><router-link to="/">Timeline</router-link></li>
-                <li><router-link to="/newentry">New Entry</router-link></li>
-                <li><router-link to="/Calendar">Calendar</router-link></li>
-                <li><router-link to="/">Categories</router-link></li>
-                <li><router-link to="/Login">Log In</router-link></li>
+                  <li><router-link to="/timeline">Timeline</router-link></li>
+                  <li><router-link to="/newentry">New Entry</router-link></li>
+                  <li><router-link to="/calendar">Calendar</router-link></li>
+                  <li><router-link to="/categories">Categories</router-link></li>
+                  <li><a @click.prevent="signOut">Sign out</a></li>
                 </ul>
             </div>
         </div>
 
         <div id="display">
                 <div class="article">
-                    <v-text-field 
-                        label="Title: " 
+                    <v-text-field
+                        label="Title: "
                         placeholder=""
                         color="#231133"
                     ></v-text-field>
