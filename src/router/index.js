@@ -1,9 +1,9 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import firebase from 'firebase/compat/app';
-import 'firebase/compat/auth';
-import 'firebase/compat/firestore';
+import firebase from "firebase/compat/app";
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
 
 Vue.use(VueRouter);
 
@@ -25,28 +25,26 @@ const routes = [
   {
     path: "/calendar",
     name: "Calendar",
-    component: () =>
-      import("../views/Calendar.vue"),
+    component: () => import("../views/Calendar.vue"),
+    meta: { requiresAuth: true },
   },
   {
     path: "/timeline",
     name: "Timeline",
-    component: () =>
-      import("../views/Timeline.vue"),
-    meta: {requiresAuth: true}
+    component: () => import("../views/Timeline.vue"),
+    meta: { requiresAuth: true },
   },
   {
     path: "/newentry",
     name: "NewEntry",
-    component: () =>
-      import("../views/NewEntry.vue"),
+    component: () => import("../views/NewEntry.vue"),
+    meta: { requiresAuth: true },
   },
   {
     path: "/register",
     name: "Register",
-    component: () =>
-      import("../views/Register.vue"),
-  }
+    component: () => import("../views/Register.vue"),
+  },
 ];
 
 const router = new VueRouter({
@@ -55,14 +53,14 @@ const router = new VueRouter({
   routes,
 });
 
-router.beforeEach((to, from, next)=> {
-  const requiresAuth = to.matched.some(record => record.meta.requiresAuth);
+router.beforeEach((to, from, next) => {
+  const requiresAuth = to.matched.some((record) => record.meta.requiresAuth);
   const isAuthenticated = firebase.auth().currentUser;
-  if(requiresAuth && !isAuthenticated){
+  if (requiresAuth && !isAuthenticated) {
     next("/");
   } else {
     next();
   }
-})
+});
 
 export default router;
