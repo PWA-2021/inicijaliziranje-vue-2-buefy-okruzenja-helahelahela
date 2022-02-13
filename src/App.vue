@@ -12,6 +12,6 @@
 <script>
 import Top from "./components/Top.vue";
 export default {
-  components: {'top-header': Top}
-}
+  components: { "top-header": Top },
+};
 </script>
