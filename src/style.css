@@ -16,6 +16,7 @@ p {
 /* home page */
 .bg {
     background-color: #231133;
+    min-height: 100vh
 }
 
 .home {
@@ -266,8 +267,8 @@ li a {
 }
 
 #login h1 {
-  font-size: 35px;
-  margin-top: 50px;
+  font-size: 45px;
+  margin-top: 40px;
   color: #F5E7F3;
 }
 
@@ -383,6 +384,27 @@ li a {
   font-size: 35px;
   margin-top: 50px;
   color: #F5E7F3;
+}
+
+/* NEW ENTRY  */
+
+#newentry {
+  color: #A3BDF5 !important;
+}
+
+.selectentry {
+  color: white !important;
+  background-color: #633277;
+  padding: 7px 7px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.mr-4 {
+  background-color: #A6BDF5 !important;
+  border-radius: 20px !important;
+  padding: 5px;
+  font-weight: bold !important;
 }
 
 @media screen and (max-width: 1320px) {
